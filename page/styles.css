@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  transition: 0.8s;
+}
+*:hover {
+  transition: 0s;
+}
+svg {
+  width: 100%;
+  border-radius: 10%;
+  background-color: rgba(112, 231, 255, 0.359);
+
+  -webkit-app-region: drag;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg {
+    background-color: rgba(4, 12, 39, 0.381);
+  }
+}
