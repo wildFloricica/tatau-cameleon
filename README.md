@@ -4,6 +4,13 @@ Take a look (dark/light):
 
 <img src="./demodark.gif" width="250" height="250"/><img src="./demolight.gif" width="250" height="250"/>
 
+This app: 
+  - is picture-in-picture🖼️(above all) 
+  - is click through app👆🏽
+  - it keeps you company🐈
+  - changes colors smoothly like a cameleon🦎
+  - it works with ANY kind of svg👾 (you just have to place it in ./page/index.html>body) 
+
 ## Installation
 
 ```console
