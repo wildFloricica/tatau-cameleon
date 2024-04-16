@@ -8,6 +8,9 @@ const createWindow = () => {
     width: 200 + 500,
     height: 200,
     webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: true,
+      sandbox: true,
       preload: path.join(__dirname, "preload.cjs"),
     },
     transparent: true,
@@ -27,16 +30,16 @@ const createWindow = () => {
 console.log(path.join(__dirname, "preload.cjs"));
 const createCloseWindow = (parent) => {
   const win = new BrowserWindow({
-    webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-    },
     parent,
     width: 40,
     height: 80,
     webPreferences: {
-      nodeIntegration: true,
+      nodeIntegration: false,
       contextIsolation: true,
+      sandbox: true,
+      preload: path.join(__dirname, "preload.cjs"),
     },
+
     transparent: true,
     frame: false,
     resizable: false,
