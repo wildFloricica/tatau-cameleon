@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^26.2.2"
+    "electron": "^28.1.4"
   },
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1"

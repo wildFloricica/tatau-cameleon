@@ -1,5 +1,6 @@
 body {
-  height: 100vh;
+  height: 200px;
+  width: 200px;
   overflow: hidden;
 }
 * {
@@ -9,10 +10,10 @@ body {
   transition: 0s;
 }
 svg {
-  width: 100%;
+  height: 200px;
+  width: 200px;
   border-radius: 10%;
   background-color: rgba(112, 231, 255, 0.359);
-
   -webkit-app-region: drag;
 }
 
