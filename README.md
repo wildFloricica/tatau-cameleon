@@ -2,9 +2,9 @@
 
 Take a look (dark/light):
 
-<img src="./demodark.gif" width="250" height="250"/><img src="./demolight.gif" width="250" height="250"/>
+<img src="./demos/demodark.gif" width="250" height="250"/><img src="./demos/demolight.gif" width="250" height="250"/>
 
-<img src="./close-and-logo-button-animations.gif" width="250" height="250" />
+<img src="./demos/close-and-logo-button-animations.gif" width="250" height="250" />
 
 This app:
 
