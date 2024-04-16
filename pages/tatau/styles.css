@@ -13,12 +13,12 @@ svg {
   height: 200px;
   width: 200px;
   border-radius: 10%;
-  background-color: rgba(112, 231, 255, 0.359);
+  background-color: rgba(210, 247, 255, 0.49);
   -webkit-app-region: drag;
 }
 
 @media (prefers-color-scheme: dark) {
   svg {
-    background-color: rgba(4, 12, 39, 0.381);
+    background-color: rgba(0, 0, 0, 0.457);
   }
 }

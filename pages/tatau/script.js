@@ -1,4 +1,4 @@
-var a = () => (isDark ? rifi(20, 70) : rifi(150, 250));
+var a = () => (isDark ? rifi(120, 170) : rifi(30, 70));
 const PATHS = document.querySelectorAll("path");
 const SVG = document.querySelector("svg");
 
@@ -13,6 +13,7 @@ function Repeatable() {
 setInterval(Repeatable, rifi(500, 900));
 
 function ColoriseRandomBackground() {
+  return;
   SVG.style.backgroundColor = `rgba(${2 * a()}, ${2 * a()}, ${a()}, ${
     rifi(20, 40) / 100
   })`;
@@ -21,16 +22,20 @@ function ColoriseRandomBackground() {
 function ColoriseRandomPath() {
   const many = rifi(1, 3);
 
-  for (let i = 0; i < many; i++)
+  const a = rifi(1, PATHS.length + 1);
+  const b = rifi(1, PATHS.length + 1);
+  for (let i = a; i < Math.max(a, PATHS.length); i++)
     coloriseSinglePath(PATHS[Math.floor(Math.random() * PATHS.length)]);
 }
 Repeatable();
 
 function coloriseSinglePath(path) {
-  Object.assign(path.style, {
-    stroke: `rgb(${a()}, ${a()}, ${a()})`,
-    strokeWidth: `${rifi(7, 10)}px`,
-  });
+  const stroke = `rgb(${a()}, ${a()}, ${a()})`;
+  const fill = `rgba(${a()}, ${a()}, ${a()}, ${rifi(70, 100) / 100})`;
+  const strokeWidth = `${rifi(7, 10)}px`;
+  path.setAttribute("stroke", stroke);
+  path.setAttribute("strokeWidth", strokeWidth);
+  path.setAttribute("fill", fill);
 }
 
 var isDark =
