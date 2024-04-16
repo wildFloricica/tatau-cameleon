@@ -47,17 +47,48 @@ body {
     transform: translate(-20%, 20%);
   }
 }
+:root {
+  --offset: 20px;
+}
+@keyframes patrol {
+  0% {
+    transform: translate(0px, calc(var(--offset) * -1));
+  }
+  25% {
+    transform: translate(var(--offset), calc(var(--offset) * -1));
+  }
+  50% {
+    transform: translate(var(--offset), 0px);
+  }
+  75% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, calc(var(--offset) * -1));
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 3s;
+}
+.dissapear {
+  animation: dissapear 5s;
+}
+.patrol {
+  scale: 1 !important;
+  animation: patrol 4s;
+}
 .prevent-select {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
 #logo-floricica {
+  scale: 2;
+  transform: translate(15%, -20%);
+  transition: 0.3s;
   padding: 0;
   margin: 0;
-  /* animation: heartbeat 3s; */
-  animation: dissapear 5s;
-
   text-align: center;
   aspect-ratio: 1;
   animation-iteration-count: infinite;
