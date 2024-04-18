@@ -6,6 +6,8 @@ Take a look (dark/light):
 
 <img src="./demos/close-and-logo-button-animations.gif" width="250" height="250" /><img src="./demos/mult-animations-closebtn.gif" width="250" height="250"/>
 
+<img src = "./demos/carrot.gif" width="250" height="250"/><img src = "./demos/carrot-dark.gif" width="250" height="250"/>
+
 This app:
 
 - is picture-in-picture🖼️(above all)

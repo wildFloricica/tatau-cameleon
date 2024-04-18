@@ -10,7 +10,6 @@ function Repeatable() {
   ColoriseRandomPath();
   ColoriseRandomBackground();
 }
-setInterval(Repeatable, rifi(500, 900));
 
 function ColoriseRandomBackground() {
   return;
@@ -27,7 +26,6 @@ function ColoriseRandomPath() {
   for (let i = a; i < Math.max(a, PATHS.length); i++)
     coloriseSinglePath(PATHS[Math.floor(Math.random() * PATHS.length)]);
 }
-Repeatable();
 
 function coloriseSinglePath(path) {
   const stroke = `rgb(${a()}, ${a()}, ${a()})`;
@@ -49,3 +47,7 @@ window
   });
 
 PATHS.forEach(coloriseSinglePath);
+
+setTimeout(() => {
+  setInterval(Repeatable, rifi(500, 900));
+}, 30000);
